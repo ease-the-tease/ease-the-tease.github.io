@@ -9,13 +9,100 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <link href="carousel.css" rel="stylesheet">
+    <link href="ett-style.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <main class="container text-center">
-        <h1 class="display-1 mt-2">Ease The Tease</h1>
-        <p class="lead">Website Under Construction</p>
+<body pagename="Home">
+    <header>
+        <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-light">
+            <a class="navbar-brand d-none d-md-block border border-dark rounded p-1" href="./index.html">
+                <img class="img-fluid logo" src="./graphics/logo.jpg" alt="">
+            </a>
+            <a class="navbar-brand center-brand d-md-none border border-dark rounded p-1" href="./index.html">
+                <img class="img-fluid logo-sm" src="./graphics/logo.jpg" alt="">
+                <!--<div class="h3 noindent align-middle text-success">Mimi Black</div>-->
+            </a>
+            <button class="navbar-toggler" type="button" id="menubutton" data-toggle="collapse"
+                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse border border-secondary rounded" id="navbarCollapse">
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="w-100 h-100 ett-bg-blue">
+                        <img class="h-100 position-absolute top-50 start-50 translate-middle" src="graphics/slide1.png">
+                    </div>
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Example headline.</h1>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 h-100 ett-bg-purple">
+                        <img class="h-100 position-absolute top-50 start-50 translate-middle" src="graphics/slide2.png">
+                    </div>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 h-100 ett-bg-yellow">
+                        <img class="h-100 position-absolute top-50 start-50 translate-middle" src="graphics/slide3.jpg">
+                    </div>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="ett-utils.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+.carousel-image{
+    filter:brightness(40%);
+}
+.navbar{
+    background-color: white;
+    max-height: 115px;
+}
+.logo{
+    max-height:100px;
+}
+.logo-sm{
+    max-height:75px;
+}
+.center-brand{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.orange{
+    color: rgb(255, 68, 0);
+}
+.noindent{
+    display:inline;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    padding-top: 115px;
+}
+
+.ett-bg-yellow {
+    background-color: #f8e07c
+}
+
+.ett-bg-blue {
+    background-color: #7db5ca;
+}
+
+.ett-bg-purple {
+    background-color: #c982c7;
+}
