@@ -58,3 +58,14 @@ body{
 .ett-bg-purple {
     background-color: #c982c7;
 }
+
+.carousel-cartoon {
+    max-height: 75%;
+}
+
+/* shrinks image to avoid crowding */
+@media(max-width: 1800px) {
+    .carousel-cartoon {
+        max-height: 58%;
+    }
+}
