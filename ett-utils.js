@@ -21,3 +21,19 @@ window.onscroll = function(){
   }
   prevScrollpos = currentScrollPos;
 }
+
+$(document).ready(function() { // adapted from https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+  setInterval(function() {
+      var footerSelector = "footer.container";
+      var docHeight = $(window).height();
+      var footerHeight = $(footerSelector).height();
+      var footerTop = $(footerSelector).position().top + footerHeight;
+      var marginTop = (docHeight - footerTop + 10);
+
+      if (footerTop < docHeight)
+          $(footerSelector).css('margin-top', marginTop + 'px'); // padding of 30 on footer
+      else
+          $(footerSelector).css('margin-top', '0px');
+      // console.log("docheight: " + docHeight + "\n" + "footerheight: " + footerHeight + "\n" + "footertop: " + footerTop + "\n" + "new docheight: " + $(window).height() + "\n" + "margintop: " + marginTop);
+  }, 250);
+});
